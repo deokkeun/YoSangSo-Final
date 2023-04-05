@@ -20,18 +20,28 @@ public class PlusServlet extends HttpServlet{
 		ShoppingCartService service = new ShoppingCartService();
 		
 		try {
+
 			int count = Integer.parseInt(req.getParameter("count"));
 			String memberNo = req.getParameter("memberNo");
 			String productNo = req.getParameter("product");
 
+
 			
 			result = service.plusCount(memberNo, count, productNo);
-			
+
 			resp.getWriter().print(result);
 			
 			
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
+
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		String path = "/WEB-INF/views/cart/shoppingCart.jsp";
+		if(result>0) req.getRequestDispatcher(path).forward(req, resp);
+
 	}
 }

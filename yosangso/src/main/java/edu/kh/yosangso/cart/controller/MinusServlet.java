@@ -21,6 +21,7 @@ public class MinusServlet extends HttpServlet {
 		ShoppingCartService service = new ShoppingCartService();
 		
 		try {
+
 			int count = Integer.parseInt(req.getParameter("count"));
 			if(count >1) {
 			String memberNo = req.getParameter("memberNo");
@@ -35,5 +36,26 @@ public class MinusServlet extends HttpServlet {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
+
+			int count = Integer.parseInt(req.getParameter("buyingRate"));
+			if(count >1) {
+			String memberNo = req.getParameter("memberNo");
+			String productNo = req.getParameter("productNo");
+			
+			
+			result = service.minusCount(memberNo, count, productNo);
+		
+			}else {
+				String path = "/WEB-INF/views/cart/shoppingCart.jsp";
+				if(result>0) req.getRequestDispatcher(path).forward(req, resp);
+			}
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		String path = "/WEB-INF/views/cart/shoppingCart.jsp";
+		if(result>0) req.getRequestDispatcher(path).forward(req, resp);
+
 	}
 }

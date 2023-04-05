@@ -1,10 +1,10 @@
 package edu.kh.yosangso.product.model.vo;
 
 import lombok.AllArgsConstructor;
+
 import lombok.Getter;
+
 import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
 
 @Getter // getter 자동 추가
 @Setter // setter 자동 추가
@@ -22,7 +22,6 @@ public class Product {
 	private int sellRate;
 	private String explain;
 	private String part;
-	
 	
 	
 }

@@ -1,18 +1,17 @@
 package edu.kh.yosangso.product.model.dao;
 
 import java.io.FileInputStream;
-import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Properties;
+
 
 import static edu.kh.yosangso.common.JDBCTemplate.*;
 
 import edu.kh.yosangso.cart.model.vo.ShoppingCart;
 import edu.kh.yosangso.product.model.vo.Product;
+
 
 public class ProductDAO {
 
@@ -33,6 +32,7 @@ public class ProductDAO {
 			e.printStackTrace();
 		}	
 	}
+
 
 	/**상품 정보 선택 DAO
 	 * @param conn

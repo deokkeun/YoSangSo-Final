@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="${contextPath}/resources/css/main-style.css">
+
     <link rel="stylesheet" href="${contextPath}/resources/css/productDetail.css">
     <link rel="stylesheet" href="${contextPath}/resources/css/slick.css">
    
@@ -17,6 +18,7 @@
     
     
     <title>productDetail</title>
+
 </head>
 <body>
     <!-- 헤더, 컨텐츠 -->
@@ -24,6 +26,7 @@
         
         <!-- 헤더 -->
         <jsp:include page="/WEB-INF/views/common/header.jsp"/>
+
         <br>
         <br>
         <br>
@@ -273,15 +276,17 @@
             
             
         </section> 
+
         
         
 
         
        
-       
+
 		<br>
 		<br>
 		<br>
+
 
 
 
@@ -297,11 +302,13 @@
   	<jsp:include page="/WEB-INF/views/common/footer.jsp"/>
 
 	<!-- jQuery 라이브러리 추가 -->
+
     
    
     <!-- main.js 연결 -->
     <script src="${contextPath}/resources/js/main.js"></script>
     <script src="${contextPath}/resources/js/slick.js"></script>
     <script src="${contextPath}/resources/js/productDetail.js"></script>
+
 </body>
 </html>
