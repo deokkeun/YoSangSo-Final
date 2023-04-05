@@ -18,24 +18,27 @@ import edu.kh.yosangso.board.model.service.ReviewService;
 import edu.kh.yosangso.board.model.vo.ReviewImage;
 import edu.kh.yosangso.common.MyRenamePolicy;
 
-@WebServlet()
+
+@WebServlet("/board/reviewAdd")
+
 public class ReviewServlet extends HttpServlet{
 	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		
+
+		System.out.println("리뷰작성 서블릿 들어옴");
 		// 리뷰 등록 써블릿
 		
-		
-		
-		
+
 		// DML 구문이니 결과 받을 리절트 변수 선언 및 초기화
 		
 		int result = 0;
 		ReviewService service = new ReviewService();
 		
 		try {
-			
+
+			System.out.println("리뷰작성 서블릿 트라이 들어옴");
+
 			int maxSize = 1024 * 1024 * 100;
 			HttpSession session = req.getSession(); // session 얻어오기 
 			String root = session.getServletContext().getRealPath("/"); // webapp 폴더까지 경로
@@ -45,9 +48,11 @@ public class ReviewServlet extends HttpServlet{
 			String encoding = "UTF-8"; // 파라미터중 파일을 제외한 파라미터(문자열)의 인코딩 지정
 			
 			// MultipartRequest 객체 -> 이 객체가 생성됨과 동시에 파라미터로 전달된 파일이 지정된 걍로에 저장(업로드)된다. 
-			
-			MultipartRequest mpReq = new MultipartRequest(req, filePath, maxSize, encoding, new MyRenamePolicy());
-			
+
+			System.out.println("리뷰작성 서블릿 멀티파트 전 들어옴");
+			MultipartRequest mpReq = new MultipartRequest(req, filePath, maxSize, encoding,  new MyRenamePolicy());
+			System.out.println("리뷰작성 서블릿 멀티파트 나감 ");
+
 			// MultipartRequest.getFileNames()
 			// - 요청 파라미터 중 모든 file 타입 태그의 name 속성 값을 얻어와서
 			// Enumeration 형태로 반환 (Iterator의 과거 버전)
@@ -75,17 +80,21 @@ public class ReviewServlet extends HttpServlet{
 					
 					imageList.add(image);
 					// 이미지 끝
+
+					System.out.println("리뷰작성 트라이 나감");
 				} // if 끝
 			} // while 끝
-			
 			// 리뷰 내용 받아오기
 			String reviewContent = mpReq.getParameter("reivewAdd");
 			// 리뷰 평점 받아오기
-			int reviewRate = Integer.parseInt(mpReq.getParameter("reviewAddRate"));
+			int reviewAddRate = Integer.parseInt(mpReq.getParameter("reviewAddRate"));
 			
-			result = service.reviewAdd(reviewContent, reviewRate, imageList);
+			result = service.reviewAdd(reviewContent, reviewAddRate,imageList);
 			
+			resp.getWriter().print(result);
 			
+			System.out.println("리뷰작성 서블릿 나감");
+
 		}catch(Exception e) {
 			e.printStackTrace();
 		}

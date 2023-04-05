@@ -10,7 +10,9 @@ import javax.servlet.http.HttpServletResponse;
 
 import edu.kh.yosangso.board.model.service.BoardService;
 
-@WebServlet()
+
+@WebServlet("/board/inquiryAdd")
+
 public class InquiryAddServlet extends HttpServlet{
 	
 	
@@ -19,6 +21,7 @@ public class InquiryAddServlet extends HttpServlet{
 		
 		// 제목 부분은 css로 내용 일부분만 보이게 할거임.
 		
+
 		String Content = req.getParameter("inquiryAdd");
 		
 		
@@ -30,6 +33,10 @@ public class InquiryAddServlet extends HttpServlet{
 			result = service.inquiryAdd(Content);
 			
 			resp.getWriter().print(result);
+
+			
+			System.out.println("갔음");
+
 		}catch(Exception e) {
 			e.printStackTrace();
 		}

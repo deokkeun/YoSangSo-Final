@@ -10,6 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="${contextPath}/resources/css/main-style.css">
     <link rel="stylesheet" href="${contextPath}/resources/css/main-sub-style.css">
+
+    <link rel="stylesheet" href="${contextPath}/resources/css/review/ReviewListPage.css">
+
     <script src="https://kit.fontawesome.com/881d1deef7.js" crossorigin="anonymous"></script>
     <title>index</title>
 </head>
@@ -50,10 +53,13 @@
                                             <div><span>작성 가능한 리뷰 (3)</span></div>
                                             <div><span>작성 가능한 리뷰 (0)</span></div>
                                         </div>
-        
+
+        							
                                         <div class="rightReivewContent">
+
+                                    <form>
                                             <div class="rightProductImg"> 
-        
+
                                                 <div>
                                                     <img src="/이현경/이미지/요생소로고최종.png" alt="#" id="reviewImages">
                                                 </div>
@@ -66,9 +72,14 @@
                                                     <button id="reviewAdd">리뷰작성</button><br><br>
                                                     <button id="reviewUpdate">수정하기</button>
                                                 </div>
-                                                
+
                                             </div>
+                                    </form> 
+
                                             <hr>
+
+                                    <form>
+
                                             <div class="rightProductImg"> 
         
                                                 <div>
@@ -85,9 +96,12 @@
                                                 </div>
                                                 
                                             </div>
+
+                                    </form>
         
                                             <hr>
-        
+                                    <form>
+
                                             <div class="rightProductImg"> 
         
                                                 <div>
@@ -97,19 +111,21 @@
                                                 <div>
                                                     <p>상품명 ~~~~</p>
                                                 </div>
-        
+
                                                 <div>
                                                     <button id="reviewAdd">리뷰작성</button><br><br>
                                                     <button id="reviewUpdate">수정하기</button>
                                                 </div>
                                                 
                                             </div>
-        
-        
+
+                                    </form>
+
                                         </div>
         
                                     </div>
         
+
                                     <div class="reviewListBox">
                                         <button> < </button> 
                                         <span><a href="">1</a></span>
