@@ -1,4 +1,4 @@
-package edu.kh.yosangso.board.controller;
+ package edu.kh.yosangso.board.controller;
 
 import java.io.IOException;
 
