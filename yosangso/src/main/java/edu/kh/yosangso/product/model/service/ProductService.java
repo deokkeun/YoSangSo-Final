@@ -1,54 +1,54 @@
 package edu.kh.yosangso.product.model.service;
 
-import static edu.kh.yosangso.common.JDBCTemplate.close;
-import static edu.kh.yosangso.common.JDBCTemplate.getConnection;
+
+import static edu.kh.yosangso.common.JDBCTemplate.*;
 
 import java.sql.Connection;
-import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+
 import java.util.List;
 
+import edu.kh.yosangso.cart.model.vo.ShoppingCart;
 import edu.kh.yosangso.product.model.dao.ProductDAO;
 import edu.kh.yosangso.product.model.vo.Product;
 
 public class ProductService {
-	
 
 	private ProductDAO dao = new ProductDAO();
 
-	/** 상품 정보 service
+	/** 상품 정보 선택 service
 	 * @return
 	 */
-	public List<Product> selectProduct(int productNo) throws Exception{
+	public List<Product> selectProduct(int pro) throws Exception{
 		Connection conn = getConnection();
 		
-		List<Product> list = dao.selectProduct(conn, productNo);
+		List<Product> productList = dao.selectProduct(conn, pro);
 		
 		close(conn);
 		
-		return list;
+		
+		
+		return productList;
 	}
 
-	
-	/** 인체페이지 상품 리스트
-	 * @param part
-	 * @return
-	 */
-	public List<Product> personList(String part) throws Exception{
+	public int detailCart(ShoppingCart cart) throws Exception {
 		
 		Connection conn = getConnection();
 		
-		List<Product> personList = dao.personList(conn, part);
+		int result = dao.detailCart(conn, cart);
+		
+		if(result > 0)	commit(conn);  
+		else			rollback(conn);
+		
 		
 		close(conn);
 		
-		return personList;
+		
+		return result;
 	}
-
 	
 	
-	
-	
-	
-	
-
 }
