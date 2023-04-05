@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 /* input박스 X버튼 제거 */
 /* IE의 경우 */
@@ -200,6 +201,8 @@ footer {
 
 
 
+=======
+>>>>>>> develop
 .content-container{
     display: flex;
     height: 100%;
@@ -214,9 +217,15 @@ footer {
     color: black;
 }
 
+<<<<<<< HEAD
 .content-container a:hover  {
     text-decoration:underline;
 }
+=======
+/*.content-container a:hover  {
+    text-decoration:underline;
+}*/
+>>>>>>> develop
 
 
 
@@ -247,6 +256,12 @@ footer {
 }
 
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> develop
 /* -------------------- 오른쪽 사이드 영역 --------------------  */
 
 /* 인체사진 */
@@ -361,6 +376,14 @@ footer {
     /* background-color:darkslateblue; */
 }  
 
+<<<<<<< HEAD
+=======
+.more a {
+    text-decoration:none; 
+}
+
+
+>>>>>>> develop
 
 /* 베스트, 신제품 1,2,3,4 */
 .BNitem {
@@ -553,7 +576,11 @@ footer {
     background:rgba(0,0,0, .5);
     z-index: -1;
     opacity: 0;
+<<<<<<< HEAD
     transition: all 0.5;
+=======
+    transition: all.30s;
+>>>>>>> develop
     margin: 0px 0px 0px 0px;
 
 }
@@ -888,7 +915,11 @@ li {
     background:rgba(0,0,0, .5);
     z-index: -1;
     opacity: 0;
+<<<<<<< HEAD
     transition: all 0.5;
+=======
+    transition: all.5s;
+>>>>>>> develop
     margin: 0px 0px 0px 0px;
 
 }
