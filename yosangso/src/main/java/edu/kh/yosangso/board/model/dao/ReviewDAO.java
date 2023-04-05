@@ -40,8 +40,10 @@ public class ReviewDAO {
 	 * @return
 	 * @throws Exception
 	 */
+
 	public int reviewAdd(Connection conn, String reviewContent, int reviewAddRate) throws Exception{
 		System.out.println("리뷰작성 DAO 들어옴");
+
 		int result = 0;
 		
 		try {
@@ -51,7 +53,9 @@ public class ReviewDAO {
 			pstmt = conn.prepareStatement(sql);
 			
 			pstmt.setString(1, reviewContent);
+
 			pstmt.setInt(2, reviewAddRate);
+
 			
 			
 			result = pstmt.executeUpdate();
@@ -59,7 +63,9 @@ public class ReviewDAO {
 		}finally {
 			close(pstmt);
 		}
+
 		System.out.println("리뷰작성 DAO 나감");
+
 		return result;
 	}
 

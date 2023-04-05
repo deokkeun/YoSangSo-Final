@@ -1,9 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
+
 <c:set var="pagination" value="${ map.pagination }"/>
 <c:set var="inquiryList" value="${ map.inquiryList }"/>
 <c:set var="url" value="inquiryList?&cp="/>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,10 +14,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="${contextPath}/resources/css/main-style.css">
+
     <link rel="stylesheet" href="${contextPath}/resources/css/inquiry/inquiryList.css">
     <script src="https://kit.fontawesome.com/881d1deef7.js" crossorigin="anonymous"></script>
     
     <title>inquiryList</title>
+
 </head>
 <body>
     <!-- 헤더, 컨텐츠 -->
@@ -60,8 +64,7 @@
                             <div>작성자</div>
                             <div>작성일</div>
                         </div>
-                        
-                        
+      
                         
 						<form action=>
                             <div class="middleListOutBox">
@@ -147,6 +150,7 @@
                             <a id="moveNext" href="${url}${pagination.nextPage}">&gt;</a>
                         </div>
                         
+
                     </div>
 
                 </div>
@@ -158,7 +162,6 @@
 
         </section>
 
-        
 
 
 
@@ -177,6 +180,7 @@
 	<!-- jQuery 라이브러리 추가 -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
    
+
 
       <script>
         
@@ -212,5 +216,6 @@
 
     <!-- inquiryList.js 연결 -->
     <script src="${contextPath}/resources/js/board/inquiryList.js"></script>
+
 </body>
 </html>
