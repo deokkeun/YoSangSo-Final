@@ -12,7 +12,6 @@ $(document).ready(function(){
         prevArrow: "<button type='button' class='slick-prev'><img src='../resources/image/cart/left.png' style='width:30px;'></button>"
     })
 });
-<<<<<<< HEAD
 
 
 function plusCount(index) {
@@ -62,6 +61,6 @@ function minusCount(index) {
 		}
 	});
 
+
 }
-=======
->>>>>>> develop
+

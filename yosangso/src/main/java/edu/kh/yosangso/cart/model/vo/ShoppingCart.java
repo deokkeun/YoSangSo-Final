@@ -13,13 +13,16 @@ import lombok.Setter;
 @Builder
 public class ShoppingCart {
 
+
 	private int cartNo;
+
 	private int memberNo;
 	private int productNo;
 	private int price;
 	private int buyingRate;
 	private String productName;
 	
+
 	public ShoppingCart(int cartNo, int memberNo, int price, int buyingRate, String productName) {
 		super();
 		this.cartNo = cartNo;
@@ -28,7 +31,7 @@ public class ShoppingCart {
 		this.buyingRate = buyingRate;
 		this.productName = productName;
 	}
-	
+
 }
 
 

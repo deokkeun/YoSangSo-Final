@@ -9,7 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="${contextPath}/resources/css/main-style.css">
-    <link rel="stylesheet" href="${contextPath}/resources/css/login.css">
+
+
     <script src="https://kit.fontawesome.com/881d1deef7.js" crossorigin="anonymous"></script>
     <title>login</title>
 </head>
@@ -19,6 +20,7 @@
         <!-- 헤더 -->
         <jsp:include page="/WEB-INF/views/common/header.jsp"/>
         
+
                 <section id="content">
             <section class="title">
                 <div>요생소</div>
@@ -54,6 +56,7 @@
                 </div>
             </section>
         </section>
+
     <!-- 헤더, 컨텐츠 끝 -->
     </main>
 
