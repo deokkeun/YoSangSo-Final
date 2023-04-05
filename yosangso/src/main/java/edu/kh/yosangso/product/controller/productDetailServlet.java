@@ -14,7 +14,7 @@ import com.google.gson.Gson;
 import edu.kh.yosangso.product.model.service.ProductService;
 import edu.kh.yosangso.product.model.vo.Product;
 
-@WebServlet("/")
+@WebServlet("/sss")
 public class productDetailServlet extends HttpServlet{
 
 	@Override

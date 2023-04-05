@@ -35,10 +35,6 @@ public class PlusServlet extends HttpServlet{
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-
-		}catch(Exception e) {
-			e.printStackTrace();
-		}
 		
 		String path = "/WEB-INF/views/cart/shoppingCart.jsp";
 		if(result>0) req.getRequestDispatcher(path).forward(req, resp);
