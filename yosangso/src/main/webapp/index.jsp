@@ -1,9 +1,15 @@
+<<<<<<< HEAD
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
+=======
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
+>>>>>>> develop
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,10 +17,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
+    <link rel="stylesheet" href="${contextPath }/resources/css/index.css">
+    <link rel="stylesheet" href="${contextPath }/resources/css/main-style.css">
+=======
     <!-- 헤더/풋터 css -->
     <link rel="stylesheet" href="resources/css/main-style.css">
     <!-- 메인페이지 css  -->
     <link rel="stylesheet" href="resources/css/index.css">
+>>>>>>> develop
     <script src="https://kit.fontawesome.com/881d1deef7.js" crossorigin="anonymous"></script>
     
     <!-- 슬라이더 파일다운받은거 -->
@@ -45,7 +56,12 @@ select * from product
 
     <!-- 헤더, 컨텐츠 -->
     <main>
+<<<<<<< HEAD
+   
+  
+=======
     
+>>>>>>> develop
     	<!-- 헤더 -->
     	<jsp:include page="/WEB-INF/views/common/header.jsp"/>
     
@@ -53,12 +69,19 @@ select * from product
         <!-- 내용 작성 공간입니다.(template2) -->
         <!-- content 전체 감싸는 영역 -->
         <section class="content-container">
+<<<<<<< HEAD
+        
+            <!-- 왼쪽사이드 -->
+            <section class="leftSide">
+            </section>
+=======
 
             <!-- 왼쪽사이드 -->
             <section class="leftSide">
             </section>
 
 
+>>>>>>> develop
             <!-- 가운데페이지 -->
             <section class="center">
 
@@ -68,6 +91,17 @@ select * from product
                                  
                     <div id="visual">
                         <div class="on">
+<<<<<<< HEAD
+                            <img src="${contextPath }/resources/image/index/메인슬라이더1편집.jpg"  width="100%">
+                        </div>
+
+                        <div>
+                            <img src="${contextPath }/resources/image/index/메인슬라이더2편집.jpg" width="100%">
+                        </div>
+
+                        <div>
+                            <img src="${contextPath }/resources/image/index/메인슬라이더3편집.png" width="100%">
+=======
                             <img src="resources/image/index/메인슬라이더1편집.jpg"  width="100%">
                         </div>
 
@@ -77,14 +111,113 @@ select * from product
 
                         <div>
                             <img src="resources/image/index/메인슬라이더3편집.png" width="100%">
+>>>>>>> develop
                         </div>
                     </div>
 
                 </section>
+<<<<<<< HEAD
+
+                <!-- 2 베스트부분 시작 -->
+                <section class="bestPart">
+
+                    <!-- 2-1 베스트 글씨 -->
+                    <div class="mainFont bestFont">베스트</div>
+
+
+                    <!-- 2-2 베스트 제품 -->
+                    <div class="bestItem"> 
+
+                        <!-- 베스트제품1 -->
+                        <div class="BNitem Bitem1">    
+                            <a href="#">    
+                                <div class="BNitemPic bestItem1Pic"> 
+                                    <figcaption>베스트제품1<br><br> 상세설명칸<br><br> 입니다 </figcaption>
+                                    <img src="${contextPath}/resources/image/index/제품_오쏘뮬.jpg" 
+                                        alt="제품사진" id="bestItemPhoto1">
+                                </div>
+                            </a>
+                                <div class="BNitemName bestItem1Name">
+                                    <a href="#">[오쏘뮬] 오쏘뮬 이뮨 멀티비타민&미네랄 14입+1입 증정 기획 (2주분)</a>  
+                                </div> 
+                            
+                                <div class="BNitemPrice bestItem1Price">75,000원</div>  
+                        </div>                        
+
+                                                 
+                        <!-- 베스트제품2 -->  
+                        <div class="BNitem Bitem2">  
+                            <a href="#">  
+                                <div class="BNitemPic bestItem2Pic"> 
+                                    <figcaption>베스트제품2<br><br> 상세설명칸<br><br> 입니다 </figcaption> 
+                                    <img src="${contextPath }/resources/image/index/제품_오쏘뮬.jpg" 
+                                        alt="제품사진" id="bestItemPhoto2"> 
+                                </div>
+                            </a>
+                                <div class="BNitemName bestItem2Name">
+                                    <a href="#">[오쏘뮬] 오쏘뮬 이뮨 멀티비타민&미네랄 14입+1입 증정 기획 (2주분)</a>
+                                </div> 
+                            
+                                <div class="BNitemPrice bestItem2Price">75,000원</div>
+                        </div>                       
+
+
+                        <!-- 베스트제품3 -->
+                        <div class="BNitem Bitem3">
+                            <a href="#">
+                                <div class="BNitemPic bestItem3Pic">
+                                    <figcaption>베스트제품3<br><br> 상세설명칸<br><br> 입니다 </figcaption>
+                                    <img src="${contextPath }/resources/image/index/제품_오쏘뮬.jpg" 
+                                    alt="제품사진" id="bestItemPhoto3">
+                                </div>
+                            </a>
+
+                                <div class="BNitemName bestItem3Name">
+                                    <a href="#">[오쏘뮬] 오쏘뮬 이뮨 멀티비타민&미네랄 14입+1입 증정 기획 (2주분)</a>  
+                                </div>
+
+                                <div class="BNitemPrice bestItem3Price">75,000원</div>  
+                        </div>
+
+
+                        <!-- 베스트제품4 -->
+                        <div class="BNitem Bitem4">
+                            <a href="#">
+                                <div class="BNitemPic bestItem1Pic">
+                                    <figcaption>베스트제품4<br><br> 상세설명칸<br><br> 입니다 </figcaption>
+                                    <img src="${contextPath }/resources/image/index/제품_오쏘뮬.jpg" 
+                                    alt="제품사진" id="bestItemPhoto4">
+                                </div>
+                            </a>
+
+                                <div class="BNitemName bestItem1Name">
+                                    <a href="#">[오쏘뮬] 오쏘뮬 이뮨 멀티비타민&미네랄 14입+1입 증정 기획 (2주분) </a>
+                                </div>        
+
+                                <div class="BNitemPrice bestItem4Price">75,000원</div>
+                        </div> 
+                    
+                    </div>
+
+
+                    
+                    <!-- 2-3 베스트제품더보기 -->
+                    <div>
+                        <div class="more bestMore">
+                            <a href="#">더보기 <i class="fa-solid fa-angles-right" id="allow"></i></a>
+                        </div>
+                    </div>
+
+
+                </section>
+=======
+>>>>>>> develop
 
 
 
 
+<<<<<<< HEAD
+=======
                 <!-- 2 베스트부분 시작 -->
                 <section class="bestPart">
 
@@ -185,6 +318,7 @@ select * from product
 
 
 
+>>>>>>> develop
                 <!-- 3 신제품부분 시작 -->
                 <section class="newPart">
 
@@ -200,7 +334,11 @@ select * from product
                             <a href="#">
                                 <div class="BNitemPic newItem1Pic">
                                     <figcaption>신제품1<br><br> 상세설명칸<br><br> 입니다 </figcaption>
+<<<<<<< HEAD
+                                    <img src="${contextPath }/resources/image/index/제품_오쏘뮬.jpg" 
+=======
                                     <img src="resources/image/index/제품_오쏘뮬.jpg" 
+>>>>>>> develop
                                         alt="제품사진" id="newItemPhoto1">  
                                 </div>
                             </a>
@@ -217,7 +355,11 @@ select * from product
                             <a href="#">
                                 <div class="BNitemPic newItem2Pic">
                                     <figcaption>신제품2<br><br> 상세설명칸<br><br> 입니다 </figcaption>
+<<<<<<< HEAD
+                                    <img src="${contextPath }/resources/image/index/제품_오쏘뮬.jpg" 
+=======
                                     <img src="resources/image/index/제품_오쏘뮬.jpg" 
+>>>>>>> develop
                                         alt="제품사진" id="newItemPhoto2">
                                 </div>
                             </a>
@@ -233,7 +375,11 @@ select * from product
                             <a href="#">
                                 <div class="BNitemPic newItem3Pic">
                                     <figcaption>신제품3<br><br> 상세설명칸<br><br> 입니다 </figcaption>
+<<<<<<< HEAD
+                                    <img src="${contextPath }/resources/image/index/제품_오쏘뮬.jpg" 
+=======
                                     <img src="resources/image/index/제품_오쏘뮬.jpg" 
+>>>>>>> develop
                                         alt="제품사진" id="newItemPhoto3">
                                 </div>
                             </a>
@@ -249,7 +395,11 @@ select * from product
                             <a href="#">
                                 <div class="BNitemPic newItem4Pic">
                                     <figcaption>신제품4<br><br> 상세설명칸<br><br> 입니다 </figcaption>
+<<<<<<< HEAD
+                                    <img src="${contextPath }/resources/image/index/제품_오쏘뮬.jpg" 
+=======
                                     <img src="resources/image/index/제품_오쏘뮬.jpg" 
+>>>>>>> develop
                                         alt="제품사진" id="newItemPhoto4">
                                 </div>
                             </a>
@@ -267,7 +417,11 @@ select * from product
                     <!-- 3-3 신제품 더보기 -->
                     <div>
                         <div class="more newMore">
+<<<<<<< HEAD
+                            <a href="#">더보기 <i class="fa-solid fa-angles-right" id="allow"></i></a>
+=======
                             <a href="${contextPath}/product/newProduct">더보기 <i class="fa-solid fa-angles-right" id="allow"></i></a>
+>>>>>>> develop
                         </div>
                     </div>
 
@@ -298,7 +452,11 @@ select * from product
                                 <a href="#">
                                     <div class="itemPic item1Pic">
                                         <figcaption>제품1<br><br>상세설명칸<br><br>입니다</figcaption>
+<<<<<<< HEAD
+                                        <img src="${contextPath }/resources/image/index/제품_오쏘뮬.jpg" 
+=======
                                         <img src="resources/image/index/제품_오쏘뮬.jpg" 
+>>>>>>> develop
                                             alt="이미지입니다" id="itemPhoto1">
                                     </div>
                                 </a>
@@ -316,7 +474,11 @@ select * from product
                                 <a href="#">
                                     <div class="itemPic item2Pic">
                                         <figcaption>제품2<br><br>상세설명칸<br><br>입니다</figcaption>
+<<<<<<< HEAD
+                                        <img src="${contextPath }/resources/image/index/제품_오쏘뮬.jpg" 
+=======
                                         <img src="resources/image/index/제품_오쏘뮬.jpg" 
+>>>>>>> develop
                                             alt="이미지입니다" id="itemPhoto2">
                                     </div>
                                 </a>    
@@ -334,7 +496,11 @@ select * from product
                                 <a href="#">
                                     <div class="itemPic item3Pic">
                                         <figcaption>제품3<br><br>상세설명칸<br><br>입니다</figcaption>
+<<<<<<< HEAD
+                                        <img src="${contextPath }/resources/image/index/제품_오쏘뮬.jpg" 
+=======
                                         <img src="resources/image/index/제품_오쏘뮬.jpg" 
+>>>>>>> develop
                                             alt="이미지입니다" id="itemPhoto3">
                                     </div>
                                 </a>
@@ -361,7 +527,11 @@ select * from product
                                 <a href="#">
                                     <div class="itemPic item4Pic">
                                         <figcaption>제품4<br><br>상세설명칸<br><br>입니다</figcaption>
+<<<<<<< HEAD
+                                        <img src="${contextPath }/resources/image/index/제품_오쏘뮬.jpg" 
+=======
                                         <img src="resources/image/index/제품_오쏘뮬.jpg" 
+>>>>>>> develop
                                             alt="이미지입니다" id="itemPhoto4"> 
                                     </div>
                                 </a>
@@ -379,7 +549,11 @@ select * from product
                                 <a href="#">
                                     <div class="itemPic item5Pic">
                                         <figcaption>제품5<br><br>상세설명칸<br><br>입니다</figcaption>
+<<<<<<< HEAD
+                                        <img src="${contextPath }/resources/image/index/제품_오쏘뮬.jpg"  
+=======
                                         <img src="resources/image/index/제품_오쏘뮬.jpg"  
+>>>>>>> develop
                                             alt="이미지입니다" id="itemPhoto5">   
                                     </div>
                                 </a>
@@ -397,7 +571,11 @@ select * from product
                                 <a href="#">
                                     <div class="itemPic item6Pic">
                                         <figcaption>제품6<br><br>상세설명칸<br><br>입니다</figcaption>
+<<<<<<< HEAD
+                                        <img src="${contextPath }/resources/image/index/제품_오쏘뮬.jpg"  
+=======
                                         <img src="resources/image/index/제품_오쏘뮬.jpg"  
+>>>>>>> develop
                                             alt="이미지입니다" id="itemPhoto6">
                                     </div>
                                 </a>
@@ -423,7 +601,11 @@ select * from product
                                 <a href="#">
                                     <div class="itemPic item7Pic">
                                         <figcaption>제품7<br><br>상세설명칸<br><br>입니다</figcaption>
+<<<<<<< HEAD
+                                        <img src="${contextPath }/resources/image/index/제품_오쏘뮬.jpg"  
+=======
                                         <img src="resources/image/index/제품_오쏘뮬.jpg"  
+>>>>>>> develop
                                             alt="이미지입니다" id="itemPhoto7">
                                     </div>
                                 </a>
@@ -441,7 +623,11 @@ select * from product
                                 <a href="#">
                                     <div class="itemPic item8Pic">
                                         <figcaption>제품8<br><br>상세설명칸<br><br>입니다</figcaption>
+<<<<<<< HEAD
+                                        <img src="${contextPath }/resources/image/index/제품_오쏘뮬.jpg" 
+=======
                                         <img src="resources/image/index/제품_오쏘뮬.jpg" 
+>>>>>>> develop
                                             alt="이미지입니다" id="itemPhoto8">
                                     </div>
                                 </a>
@@ -460,7 +646,11 @@ select * from product
                                 <a href="#">
                                     <div class="itemPic item9Pic">
                                         <figcaption>제품8<br><br>상세설명칸<br><br>입니다</figcaption>
+<<<<<<< HEAD
+                                        <img src="${contextPath }/resources/image/index/제품_오쏘뮬.jpg" 
+=======
                                         <img src="resources/image/index/제품_오쏘뮬.jpg" 
+>>>>>>> develop
                                             alt="이미지입니다" id="itemPhoto9">
                                     </div>
                                 </a>
@@ -483,7 +673,11 @@ select * from product
                 
                     <!-- 4-3 제품더보기 더보기 -->
                     <div class="itemMore"> 
+<<<<<<< HEAD
+                        <a href="#">더보기 <i class="fa-solid fa-angles-right" id="allow"> </i></a>
+=======
                         <a href="${contextPath}/product/allProduct">더보기 <i class="fa-solid fa-angles-right" id="allow"> </i></a>
+>>>>>>> develop
                     </div>
 
 
@@ -506,10 +700,32 @@ select * from product
                  <!-- 인체사진 플로팅바-->
                  <div class="floating">
                     <a href="#"> 
+<<<<<<< HEAD
+                        <img id="people" src="${contextPath }/resources/image/index/인체이미지누끼.png" >
+                    </a>
+                </div>
+            
+            <form action="cart/shoppingCart" method="get">
+				<input type="text" name="userNum">
+				<button>담기</button>
+			</form>
+            <form action="refund" method="get">
+				<input type="text" name="memberNo">
+				<button>환불페이지 부르기</button>
+			</form>
+			<form action="refundList" method="post">
+				<input type="text" name="refundMember">
+				<button>환불내역 부르기</button>
+			</form>
+			<form action="boardTest" method="get">
+				<button>보드테스트 부르기</button>
+			</form>
+=======
                         <img id="people" src="resources/image/index/인체이미지누끼.png" >
                     </a>
                 </div>
             
+>>>>>>> develop
             </section>
 
 
@@ -528,6 +744,7 @@ select * from product
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
    
     <!-- main.js 연결 -->
+    <script src="${contextPath}/resources/js/index.js"></script>
     <script src="${contextPath}/resources/js/main.js"></script>
 </body>
 </html>

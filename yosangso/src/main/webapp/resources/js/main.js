@@ -13,6 +13,8 @@ document.getElementById("query").addEventListener("mouseover", e => {
 });
 
 /* ----------------------------------------------------------- */
+<<<<<<< HEAD
+=======
 
 
 // 메인페이지 사진 슬라이더 영역
@@ -53,3 +55,4 @@ $(function() {
   });
   
   
+>>>>>>> develop
