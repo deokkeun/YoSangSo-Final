@@ -17,11 +17,14 @@ public class Member {
 	private int memberNo;
 	private String memberId;
 	private String memberPw;
-	//private String memberPwDup;
-	//......
-	
-	
-	
-	
-	
+	private String memberName;
+	private String memberCert;
+	private String memberTel;
+	private String memberAddress;
+//	private String profileImage;
+//	private date enrollDate;
+	private String secessionFlag;
+	//a
+
+
 }
